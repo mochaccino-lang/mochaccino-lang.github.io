@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Variables - Mochaccino</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Variables";
+    var mkdocs_page_input_path = "Variables.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mochaccino</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Compiling/">Compiling</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Variables</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#variables">Variables</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#types">Types</a></li>
+        
+            <li><a class="toctree-l3" href="#math">Math</a></li>
+        
+            <li><a class="toctree-l3" href="#mathematical-constants">Mathematical Constants</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Functions/">Functions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../TLDR/">TL;DR</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mochaccino</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Variables</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="variables">Variables</h1>
+<p>Here's an example of a variable in a hello world program: <br></p>
+<p><code>myvariable is "hello world"</code></p>
+<p><code>preach ..like myvariable</code></p>
+<p><br></p>
+<p>Assigning a variable a value is done with the keyword <code>is</code>, and calling a variable requires the prefix <code>..like</code>.</p>
+<h3 id="types">Types</h3>
+<p>Variables can be in 3-4 main states, though there are more complicated ones (for nerds haha).</p>
+<p>The main states are:</p>
+<ol>
+<li>
+<p>String</p>
+</li>
+<li>
+<p>Integer or float</p>
+</li>
+<li>
+<p>Boolean</p>
+</li>
+</ol>
+<p>A string is any character sequence, like a word or a sentence. It has to be stored within quotes. <br></p>
+<p><code>mystring is "hello world"</code>  <br></p>
+<p>An integer is any whole number (without decimals) and a float is any number (can have decimals) <br></p>
+<p><code>myinteger is 4</code> integer</p>
+<p><code>myfloat is 3.14</code> float <br></p>
+<p>A boolean is either True or False, almost like a light switch, on or off. <br></p>
+<p><code>mybool is True</code></p>
+<p><code>mybool is False</code>  <br></p>
+<p>Another commonly used variable type is array. An array holds a list of items, each item could be any of the states listed above. <br></p>
+<p><code>myarray is ["Hello!", 3, True]</code></p>
+<h3 id="math">Math</h3>
+<hr />
+<p>On integers and floats, you can perform mathematic operations. Let's say you wanted to add one to your variable, this is how we would do that. <br></p>
+<p><code>myinteger is ..like myinteger plus 1</code>  <br></p>
+<p>So if our variable was 3, now it would be four.</p>
+<p>Here's a list of all math operations you can perform:</p>
+<ul>
+<li>
+<p><code>plus</code> - adds</p>
+</li>
+<li>
+<p><code>minus</code> - subtracts</p>
+</li>
+<li>
+<p><code>devided by</code> - devides</p>
+</li>
+<li>
+<p><code>times</code> - multiplies</p>
+</li>
+<li>
+<p><code>modulo</code> - performs the modulo operation</p>
+</li>
+<li>
+<p><code>toy</code> - acts as += would in most languages</p>
+</li>
+<li>
+<p><code>take</code> - acts as -= would in most languages</p>
+</li>
+</ul>
+<p><br></p>
+<p>There is a special case when preaching a math problem. <br></p>
+<p><code>firstvariable is 10</code></p>
+<p><code>secondvariable is 5</code></p>
+<p><code>thirdvariable is ..like firstvariable plus ..like secondvariable</code></p>
+<p><code>preach ..like thirdvariable int</code> <br></p>
+<p>We have to tell the preach expression that it should output an integer and not a string.</p>
+<p>Alternatively, we can make the math compute in the third variable by passing the int argument first, like this: <br>
+<code>firstvariable is 10</code></p>
+<p><code>secondvariable is 5</code></p>
+<p><code>int thirdvariable is ..like firstvariable plus ..like secondvariable</code></p>
+<p><code>preach ..like thirdvariable</code> <br>
+Having these two options widens the range for string manipulation within variables and arrays.</p>
+<h3 id="mathematical-constants">Mathematical Constants</h3>
+<p>These are numbers that you might need for math?</p>
+<ul>
+<li>
+<p><code>sol</code> - speed of light</p>
+</li>
+<li>
+<p><code>pi</code> - pi (approximated 15 digits)</p>
+</li>
+<li>
+<p><code>euler</code> - euler's number (e, 5 digits after period)</p>
+</li>
+<li>
+<p><code>s2</code> - square root of 2 (65 digits)</p>
+</li>
+</ul>
+<p>There aren't others because you can literally look them up and i'm too lazy to go through the mathematical constant wikipedia page</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Functions/" class="btn btn-neutral float-right" title="Functions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Compiling/" class="btn btn-neutral" title="Compiling"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Compiling/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Functions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
